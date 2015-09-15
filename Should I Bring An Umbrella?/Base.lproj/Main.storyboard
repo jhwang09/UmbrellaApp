@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5qb-gc-4VJ">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5qb-gc-4VJ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Is it going to rain?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og9-Xq-QLQ">
@@ -34,29 +33,19 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </label>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Q5-aR-5iD">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Q5-aR-5iD">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="86"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Should I bring an umbrella?" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlT-qe-snO">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Should I bring an umbrella?" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlT-qe-snO">
                                                 <rect key="frame" x="120" y="36" width="362" height="42"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="21" id="Mqc-sE-jfJ"/>
-                                                    <constraint firstAttribute="width" constant="361" id="NWc-CA-tfa"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="26"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.17254901960784313" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="86" id="2NK-No-eVd"/>
-                                            <constraint firstItem="qlT-qe-snO" firstAttribute="centerX" secondItem="7Q5-aR-5iD" secondAttribute="centerX" id="NKE-oM-gjX"/>
-                                            <constraint firstItem="qlT-qe-snO" firstAttribute="top" secondItem="7Q5-aR-5iD" secondAttribute="top" constant="35" id="OTw-l7-pEE"/>
-                                            <constraint firstAttribute="height" constant="86" id="ZE0-aq-TfY"/>
-                                        </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Predicting the future..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5X-QA-8Ha">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Predicting the future..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5X-QA-8Ha">
                                         <rect key="frame" x="0.0" y="494" width="600" height="92"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -64,31 +53,9 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="7Q5-aR-5iD" firstAttribute="leading" secondItem="5qb-gc-4VJ" secondAttribute="leading" id="3Ul-LA-fMO"/>
-                                    <constraint firstAttribute="trailing" secondItem="og9-Xq-QLQ" secondAttribute="trailing" constant="60" id="BPE-Md-2WL"/>
-                                    <constraint firstItem="og9-Xq-QLQ" firstAttribute="top" secondItem="7Q5-aR-5iD" secondAttribute="bottom" constant="218" id="BVq-5p-Mov"/>
-                                    <constraint firstAttribute="bottom" secondItem="R5X-QA-8Ha" secondAttribute="bottom" id="DQ7-Zb-0Qq"/>
-                                    <constraint firstItem="og9-Xq-QLQ" firstAttribute="leading" secondItem="5qb-gc-4VJ" secondAttribute="leading" constant="60" id="GUS-Ha-vMh"/>
-                                    <constraint firstAttribute="bottom" secondItem="R5X-QA-8Ha" secondAttribute="bottom" constant="14" id="IxA-Da-Qjv"/>
-                                    <constraint firstItem="og9-Xq-QLQ" firstAttribute="centerX" secondItem="5qb-gc-4VJ" secondAttribute="centerX" id="Px4-28-MQh"/>
-                                    <constraint firstAttribute="trailing" secondItem="R5X-QA-8Ha" secondAttribute="trailing" id="Raq-05-t1h"/>
-                                    <constraint firstItem="7Q5-aR-5iD" firstAttribute="leading" secondItem="5qb-gc-4VJ" secondAttribute="leading" constant="-20" id="l70-Nv-g0q"/>
-                                    <constraint firstAttribute="trailing" secondItem="7Q5-aR-5iD" secondAttribute="trailing" id="lMp-dG-keF"/>
-                                    <constraint firstItem="R5X-QA-8Ha" firstAttribute="leading" secondItem="5qb-gc-4VJ" secondAttribute="leading" id="n4l-ZT-sk8"/>
-                                    <constraint firstItem="og9-Xq-QLQ" firstAttribute="centerY" secondItem="5qb-gc-4VJ" secondAttribute="centerY" id="qJt-Os-aTx"/>
-                                    <constraint firstAttribute="trailing" secondItem="7Q5-aR-5iD" secondAttribute="trailing" constant="-20" id="rqJ-Tj-4Y6"/>
-                                    <constraint firstItem="og9-Xq-QLQ" firstAttribute="centerX" secondItem="5qb-gc-4VJ" secondAttribute="centerX" id="tnJ-cA-KIe"/>
-                                    <constraint firstItem="7Q5-aR-5iD" firstAttribute="top" secondItem="5qb-gc-4VJ" secondAttribute="top" id="vn8-Aq-M86"/>
-                                    <constraint firstItem="7Q5-aR-5iD" firstAttribute="top" secondItem="5qb-gc-4VJ" secondAttribute="top" id="ycl-37-NNo"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="5qb-gc-4VJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="4Cj-LT-RAd"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5qb-gc-4VJ" secondAttribute="bottom" id="swQ-1c-Fd7"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="cityState" destination="R5X-QA-8Ha" id="Kam-xj-TE0"/>
