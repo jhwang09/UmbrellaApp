@@ -14,6 +14,7 @@ import SwiftyJSON
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var displayText: UILabel!
+    @IBOutlet weak var cityState: UILabel!
     
     var locationManager:CLLocationManager!
     
@@ -24,6 +25,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        print("here")
         locationManager.startUpdatingLocation()
     }
     
@@ -49,17 +56,27 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func displayLocationInfo(placemark: CLPlacemark?) {
-
+        
+        var state = ""
+        var city = ""
+        
         if placemark != nil {
             //stop updating location to save battery life
             locationManager.stopUpdatingLocation()
-            print(placemark!.locality)
-            print(placemark!.postalCode)
-            print(placemark!.administrativeArea)
-            print(placemark!.country)
+
+            state = placemark!.administrativeArea!
+            city = placemark!.locality!
+            
+            cityState.text = city + ", " + state
+            
+            city = String(city.characters.map {
+                $0 == " " ? "_" : $0
+            })
+            
+            print(placemark!.postalCode!)
         }
         
-        Alamofire.request(.GET, "http://api.wunderground.com/api/d45e7eb8aeb1fed2/hourly/q/NJ/Jersey_City.json", parameters: nil)
+        Alamofire.request(.GET, "http://api.wunderground.com/api/d45e7eb8aeb1fed2/hourly/q/" + state + "/" + city + ".json", parameters: nil)
             .responseJSON { _, _, json in
                 let data = JSON(json.value!)
                 let hourly = data["hourly_forecast"]
