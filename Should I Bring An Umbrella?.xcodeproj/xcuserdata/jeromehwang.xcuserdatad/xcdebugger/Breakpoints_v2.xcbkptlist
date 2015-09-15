@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Should I Bring An Umbrella?/ViewController.swift"
+            timestampString = "463903013.874475"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Should_I_Bring_An_Umbrella_.ViewController.locationManager (Should_I_Bring_An_Umbrella_.ViewController)(ObjectiveC.CLLocationManager, didUpdateLocations : Swift.Array&lt;ObjectiveC.CLLocation&gt;) -&gt; ()"
+                  moduleName = "Should I Bring An Umbrella?"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeromehwang/Projects/Should%20I%20Bring%20An%20Umbrella%3F/Should%20I%20Bring%20An%20Umbrella%3F/ViewController.swift"
+                  timestampString = "463861819.414122"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Should_I_Bring_An_Umbrella_.ViewController.(locationManager (Should_I_Bring_An_Umbrella_.ViewController) -&gt; (ObjectiveC.CLLocationManager, didUpdateLocations : Swift.Array&lt;ObjectiveC.CLLocation&gt;) -&gt; ()).(closure #1)"
+                  moduleName = "Should I Bring An Umbrella?"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeromehwang/Projects/Should%20I%20Bring%20An%20Umbrella%3F/Should%20I%20Bring%20An%20Umbrella%3F/ViewController.swift"
+                  timestampString = "463861819.414424"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Should I Bring An Umbrella?/ViewController.swift"
+            timestampString = "463978782.862746"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
